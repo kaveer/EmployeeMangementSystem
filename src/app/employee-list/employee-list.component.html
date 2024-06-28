@@ -1,1 +1,18 @@
-<p>employee-list works!</p>
+<div class="container">
+  <h1 class="display-5">Employee List <button type="button" (click)="showAddEmployeeComponent()" class="btn btn-outline-primary">+</button></h1>
+
+  <div class="list-group">
+    <button *ngFor="let emp of employees" (click)="getEmployeeDetails(emp)" [ngClass]="emp.experience > 5? 'list-group-item list-group-item-success': 'list-group-item list-group-item-light'">Name: {{emp.name}}, Department: {{emp.department}}</button>
+  </div>
+  <br>
+  <div *ngIf="employeeDetails">
+    <ems-employee-detail [employeeInfo]="employeeDetails"></ems-employee-detail>
+  </div>
+  <div *ngIf="showAddEmployee">
+    <ems-add-employee (addEmployeeOutput)="getAddedEmployee($event)"></ems-add-employee>
+  </div>
+</div>
+
+
+
+

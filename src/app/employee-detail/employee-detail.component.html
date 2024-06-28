@@ -1,1 +1,28 @@
-<p>employee-detail works!</p>
+<div class="container">
+  <h1 class="display-6">Employee Details</h1>
+  <br>
+
+  <div class="card">
+    <h4 class="card-header">{{this.employeeInfo?.name}}</h4>
+    <div class="card-body">
+      <h5>
+        Id:
+        <small class="text-body-secondary">{{ this.employeeInfo?.id }}</small>
+      </h5>
+      <h5>
+        Position:
+        <small class="text-body-secondary">{{ this.employeeInfo?.position }}</small>
+      </h5>
+      <h5>
+        Department:
+        <small class="text-body-secondary">{{ this.employeeInfo?.department }}</small>
+      </h5>
+      <h5>
+        Experience:
+        <small class="text-body-secondary">{{ this.employeeInfo?.experience }}</small>
+      </h5>
+    </div>
+  </div>
+
+
+</div>

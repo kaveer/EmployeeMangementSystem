@@ -1,1 +1,28 @@
-<p>add-employee works!</p>
+<div class="container">
+  <h1 class="display-6">Add Employee</h1>
+  <br>
+  <div class="card">
+    <div class="card-body">
+      <div class="mb-3">
+        <label for="nameTextId" class="form-label">Name</label>
+        <input type="text" class="form-control" [(ngModel)]="name" id="nameTextId">
+      </div>
+      <div class="mb-3">
+        <label for="positionTextId" class="form-label">Position</label>
+        <input type="text" class="form-control" [(ngModel)]="position" id="positionTextId">
+      </div>
+      <div class="mb-3">
+        <label for="experienceTextId" class="form-label">Experience</label>
+        <input type="number" class="form-control" [(ngModel)]="experience" id="experienceTextId">
+      </div>
+      <div class="mb-3">
+        <label for="departmentTextId" class="form-label">Department</label>
+        <input type="text" class="form-control" [(ngModel)]="department" id="departmentTextId">
+      </div>
+      <button type="button" (click)="addEmployee()" class="btn btn-outline-primary">Add employee</button>
+    </div>
+  </div>
+
+  <br>
+
+</div>
